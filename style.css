@@ -1,15 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+body {
+  background: beige;
+}
+
 header {
-    
+  position: relative;
+  height: 10vh;
+  min-height: 70px;
+  width: 100%;
+  background-color: rgba(165, 42, 42, 0.9);
+  z-index: 99;
+}
+
+.header-wrapper {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-container {
+  height: 100%;
+  width: 8%;
+  padding: 0.5em;
+}
+
+nav {
+  width: 50%;
 }
 
 ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style: none;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
 }
 
-img {
-    height: 100px;
-    width: 100px;
+.log-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 12 / span 2;
+  grid-row: 1/2;
+}
+
+.shopping-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 10 / span 2;
+  grid-row: 1/2;
+}
+
+.fa-shopping-cart {
+  font-size: 3em;
+  color: white;
+}
+
+input {
+  margin-bottom: 0.5rem;
+}
+
+.hero-wrapper {
+  position: fixed;
+  top: 0;
+  z-index: -10;
+}
+
+main {
+  display: flex;
+  align-items: flex-end;
+  width: 70%;
+  height: 90vh;
+  margin: 0 auto 0;
+}
+
+.product-main-view {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-img {
+  height: 100%;
+  width: 100%;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  width: 50%;
+  color: white;
+  font-size: 1.6rem;
+  margin-bottom: 15rem;
+}
+
+.product-option {
+  height: 30em;
+  width: 28%;
+  border-style: solid;
+  border-width: 2px;
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-content: center;
+}
+
+.product-image {
+  height: 20em;
+  border-bottom: solid;
+  border-width: 0.5px;
+}
+
+.product-text {
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.product-button {
+  width: 50%;
+  align-items: center;
 }
