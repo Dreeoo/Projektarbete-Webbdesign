@@ -22,130 +22,122 @@
             <nav>
                 <ul>
                     <li>
-                        <a class="btn btn-lg btn-block btn-primary" role="button" href="index.html">Hem</a>
+                        <a class="btn btn-lg btn-block btn-info" role="button" href="index.html">Hem</a>
                     </li>
                     <li>
-                        <a class="btn btn-lg btn-block btn-primary" role="button" href="details.html">Matkassar</a>
+                        <a class="btn btn-lg btn-block btn-info" role="button" href="details.html">Matkassar</a>
                     </li>
                     <li>
-                        <a class="btn btn-lg btn-block btn-primary" role="button" href="about.html">Om oss</a>
+                        <a class="btn btn-lg btn-block btn-info" role="button" href="about.html">Om oss</a>
                     </li>
                 </ul>
             </nav>
             <div class="shopping-cart">
-                <i class="fas fa-shopping-cart"></i>
-            </div>
-            <div class="log-in">
-                <button class="btn btn-secondary">Logga in</button>
+                <a href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
             </div>
         </div>
     </header>
 
     <main>
         <div class="product-main-view">
-            <div class="product-option" data-toggle="modal" data-target="#modalOne">
-                <img class="product-image" src="../images/kasse1.png" alt="Bild på kasse 1">
-                <h5>Frys-kassen</h5>
-                <p class="product-text">I denna kasse hittar du bara frysprodukter. Saker som låter dig poppa in dom i mikron och låta dom värmas, passar perfekt för den late, okunnige eller bara helt körda i huvudet. Har du noll kunskap och intresse för allt med matlagning så är detta kassen för dig!</br>Klicka för mer info!</p>
-                <p class="product-text"><strong>Pris: 250:-</strong></p>
-            </div>
-            <div class="product-option" data-toggle="modal" data-target="#modalTwo">
-                <img class="product-image" src="../images/kasse2.png" alt="Bild på kasse 2">
-                <h5>Svensson-kassen</h5>
-                <p class="product-text">Kassen för dig som vill ha snabb och enkel mat. I denna kasse får du saker som falukorv, makaroner, köttbullar och såser i påsar. Innehållet i denna kasse kräver inga recept, det du får kan du bara koka eller steka på några minuter!</br>Klicka för mer info!</p>
-                <p class="product-text"><strong>Pris: 500:-</strong></p>
-            </div>
-            <div class="product-option" data-toggle="modal" data-target="#modalThree">
-                <img class="product-image" src="../images/kasse3.png" alt="Bild på kasse 3">
-                <h5>"Jag har pengar"-kassen</h5>
-                <p class="product-text">Ostron och allt annat man kan tänka sig från medelhavet är bara en del av den kulinariska resa du kommer göra med denna kasse. Här får du mat ifrån hela världen, alltid med recept på den finaste maten du någonsin kommer att laga!</br>Klicka för mer info!</p>
-                <p class="product-text"><strong>Pris: 1000:-</strong></p>
-            </div>
-
-                <!-- Modal för kasse 1 -->
-            <div class="modal" id="modalOne">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-              
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                      <h4 class="modal-title">Frys-kassen</h4>
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="product-image" src="../images/kasse1.png" alt="Bild på kasse 1">
+                        <h5>Frys-kassen</h5>
+                        <p class="product-text">I denna kasse hittar du bara frysprodukter. Saker som låter dig poppa in dom i mikron och låta dom värmas, passar perfekt för den late, okunnige eller bara helt körda i huvudet. Har du noll kunskap och intresse för allt med matlagning
+                            så är detta kassen för dig!</br><strong>Håll över för mer info!</strong></p>
+                        <p class="product-text"><strong>Pris: 250:-</strong></p>
                     </div>
-              
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        <img class="modal-image" src="../images/kasse1.png" alt="">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sapiente, earum neque harum dignissimos ducimus mollitia veniam in magni magnam rerum labore id veritatis laborum recusandae maxime, animi deserunt dolor.
+                    <div class="flip-card-back">
+                        <h2>Frys-kassen</h2>
+                        <p>Exempel på innehåll:</p>
+                        <ul>
+                            <li>10-pack Billys</li>
+                            <li>2x Karins lasagne</li>
+                            <li>5x Dafgårds fryslåda</li>
+                            <li>1kg pytt-i-panna</li>
+                        </ul>
+                        <h4><strong>Pris: 250:-</strong></h4>
+                        <button class="btn btn-success" onClick="window.location.href='checkout.html'">Köp</button>
                     </div>
-              
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-success" data-dismiss="modal">Köp</button>
-                      <button type="button" class="btn btn-danger" data-dismiss="modal">Stäng</button>
-                    </div>
-              
-                  </div>
                 </div>
-              </div>
-
-                <!-- Modal för kasse 2 -->
-              <div class="modal" id="modalTwo">
-                  <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                
-                      <!-- Modal Header -->
-                      <div class="modal-header">
-                        <h4 class="modal-title">Frys-kassen</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      </div>
-                
-                      <!-- Modal body -->
-                      <div class="modal-body">
-                          <img class="modal-image" src="../images/kasse2.png" alt="">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sapiente, earum neque harum dignissimos ducimus mollitia veniam in magni magnam rerum labore id veritatis laborum recusandae maxime, animi deserunt dolor.
-                      </div>
-                
-                      <!-- Modal footer -->
-                      <div class="modal-footer">
-                          <button type="button" class="btn btn-success" data-dismiss="modal">Köp</button>
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Stäng</button>
-                      </div>
-                
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="product-image" src="../images/kasse2.png" alt="Bild på kasse 2">
+                        <h5>Svensson-kassen</h5>
+                        <p class="product-text">Kassen för dig som vill ha snabb och enkel mat. I denna kasse får du saker som falukorv, makaroner, köttbullar och såser i påsar. Innehållet i denna kasse kräver inga recept, det du får kan du bara koka eller steka på några minuter!</br><strong>Håll över för mer info!</strong></p>
+                        <p class="product-text"><strong>Pris: 500:-</strong></p>
                     </div>
-                  </div>
+                    <div class="flip-card-back">
+                        <h2>Svensson-kassen</h2>
+                        <p>Exempel på innehåll:</p>
+                        <ul>
+                            <li>1kg köttbullar</li>
+                            <li>1kg falukorv</li>
+                            <li>2kg potatis</li>
+                            <li>Olika såser</li>
+                        </ul>
+                        <h4><strong>Pris: 500:-</strong></h4>
+                        <button class="btn btn-success" onClick="window.location.href='checkout.html'">Köp</button>
+                    </div>
                 </div>
-
-                <!-- Modal för kasse 3 -->
-                <div class="modal" id="modalThree">
-                    <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                  
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                          <h4 class="modal-title">Frys-kassen</h4>
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-                  
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                            <img class="modal-image" src="../images/kasse3.png" alt="">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sapiente, earum neque harum dignissimos ducimus mollitia veniam in magni magnam rerum labore id veritatis laborum recusandae maxime, animi deserunt dolor.
-                        </div>
-                  
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-success" data-dismiss="modal">Köp</button>
-                          <button type="button" class="btn btn-danger" data-dismiss="modal">Stäng</button>
-                        </div>
-                  
-                      </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="product-image" src="https://img.koket.se/standard-mega/3-sorters-ostron-med-tillbehor.jpg.webp" alt="Bild på kasse 3">
+                        <h5>Gastronomi-kassen</h5>
+                        <p class="product-text">Ostron och allt annat man kan tänka sig från medelhavet är bara en del av den kulinariska resa du kommer göra med denna kasse. Här får du mat ifrån hela världen, alltid med recept på den finaste maten du någonsin kommer att laga!</br>
+                            <strong>Håll över för mer info!</strong>
+                        </p>
+                        <p class="product-text"><strong>Pris: 1000:-</strong></p>
                     </div>
-                  </div>
+                    <div class="flip-card-back">
+                        <h2>Gastronomi-kassen</h2>
+                        <p>Exempel på innehåll:</p>
+                        <ul>
+                            <li>5kg handfångade ostron</li>
+                            <li>1h Skype med Gordon Ramsey</li>
+                            <li>5 hemliga recept</li>
+                            <li>1kg Vildfångad lax(urbenad)</li>
+                            <li>5kg Entrecóte</li>
+                        </ul>
+                        <h4><strong>Pris: 500:-</strong></h4>
+                        <button class="btn btn-success" onClick="window.location.href='checkout.html'">Köp</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
-    <footer></footer>
+
+    <footer>
+        <div class="footer-wrapper">
+            <ul class="social-links">
+                <li>
+                    <a href="#"><i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+            </ul>
+            <p>Copyright © - 2020 - Matkassen - All rights reserved</p>
+            <ul class="footer-info">
+                <li><a href="about.html">Om oss</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -13,43 +13,90 @@
 </head>
 
 <body>
-    <div class="content-container">
-        <header>
+    <header>
+        <div class="header-wrapper">
             <div class="logo-container">
                 <img class="logo-img" src="../images/logo.svg" alt="Logga av matkasse" />
             </div>
             <nav>
                 <ul>
                     <li>
-                        <a class="btn btn-lg btn-block btn-primary" role="button" href="index.html">Hem</a>
+                        <a class="btn btn-lg btn-block btn-info" role="button" href="index.html">Hem</a>
                     </li>
                     <li>
-                        <a class="btn btn-lg btn-block btn-primary" role="button" href="details.html">Matkassar</a>
+                        <a class="btn btn-lg btn-block btn-info" role="button" href="details.html">Matkassar</a>
                     </li>
                     <li>
-                        <a class="btn btn-lg btn-block btn-primary" role="button" href="about.html">Om oss</a>
+                        <a class="btn btn-lg btn-block btn-info" role="button" href="about.html">Om oss</a>
                     </li>
                 </ul>
             </nav>
             <div class="shopping-cart">
-                <i class="fas fa-shopping-cart"></i>
+                <a href="checkout.html"><i class="fas fa-shopping-cart"><span>1</span></i></a>
             </div>
-            <div class="log-in">
-                <button class="btn btn-secondary">Logga in</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="checkout-wrapper">
+
+            <div class="checkout-divider">
+                <ul class="checkout-form">
+                    <li>
+                        <h1>Checkout</h1>
+                    </li>
+                    <li><label>Fullständigt namn</label><input type="text" placeholder="För- och efternamn"></li>
+                    <li><label>Adress för leverans</label><input type="text" placeholder="Adress för leverans"></li>
+                    <li><label>E-post för bekräftelse</label><input type="text" placeholder="E-post"></li>
+                    <li><label>Telefonnummer</label><input type="text" placeholder="Telefonnummer"></li>
+                    <li><label>Kortuppgifter</label><input type="text" placeholder="Kortuppgifter"></li>
+                    <label>Köpalternativ</label>
+                    <select>
+                        <option >Engångsköp</option>
+                        <option >Varje vecka</option>
+                        <option >Varannan vecka</option>
+                      </select>
+                </ul>
             </div>
-        </header>
+            <div class="checkout-divider">
+                <div class="checkout-summary">
+                    <h2>Fryskassen</h2>
+                    <img class="checkout-image" src="../images/kasse1.png" alt="bild på vald kasse">
+                    <p>Du har valt Fryskassen</p>
+                    <p>Pris: 250:-</p>
+                    <p>Leveransavgift: 100:-</p>
+                    <p>Totalsumma: 350:-</p>
+                    <button class="btn btn-success">Slutför köp</button>
+                    <button class="btn btn-danger" onClick="window.location.href='index.html'">Avbryt</button>
+                </div>
+            </div>
+        </div>
+    </main>
 
-        <main>
-            <img src="../images/hero-img.jpg" alt="bild på mat" class="hero-img">
-            <article>
-                <h1>Välkommen</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicig elit. Vero repellendus maxime rem dicta voluptatum, error dolores amet expedita itaque id est accusamus ipsa cumque beatae! Cum vel error natus repellendus!</p>
-                <button class="btn btn-info btn-lg btn-block">Se våra matkassar</button>
-            </article>
-        </main>
+    <footer>
+        <div class="footer-wrapper">
+            <ul class="social-links">
+                <li>
+                    <a href="#"><i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <p>Copyright © - 2020 - Matkassen - All rights reserved</p>
+            <ul class="footer-info">
+                <li><a href="about.html">Om oss</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
 
-        <footer></footer>
-    </div>
+        </div>
+    </footer>
 </body>
 
 </html>
