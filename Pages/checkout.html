@@ -31,9 +31,6 @@
                     </li>
                 </ul>
             </nav>
-            <div class="shopping-cart">
-                <a href="checkout.html"><i class="fas fa-shopping-cart"><span>1</span></i></a>
-            </div>
         </div>
     </header>
 
@@ -45,54 +42,60 @@
                     <li>
                         <h1>Checkout</h1>
                     </li>
-                    <li><label>Fullständigt namn</label><input type="text" placeholder="För- och efternamn"></li>
-                    <li><label>Adress för leverans</label><input type="text" placeholder="Adress för leverans"></li>
-                    <li><label>E-post för bekräftelse</label><input type="text" placeholder="E-post"></li>
-                    <li><label>Telefonnummer</label><input type="text" placeholder="Telefonnummer"></li>
-                    <li><label>Kortuppgifter</label><input type="text" placeholder="Kortuppgifter"></li>
-                    <label>Köpalternativ</label>
+                    <li><label><strong>Fullständigt namn</strong></label><input type="text" placeholder="För- och efternamn"></li>
+                    <li><label><strong>Adress för leverans </strong></label><input type="text" placeholder="Adress för leverans"></li>
+                    <li><label><strong>E-post för bekräftelse</strong></label><input type="text" placeholder="E-post"></li>
+                    <li><label><strong>Telefonnummer</strong></label><input type="text" placeholder="Telefonnummer"></li>
+                    <label><strong>Betalningsmetod</strong></label>
+                    <i class="fab fa-cc-mastercard payment-link"><input type="radio" id="mastercard" name="payment" value="mastercard"></i>
+                    <i class="fab fa-cc-visa payment-link"><input type="radio" id="visa" name="payment" value="visa"></i>
+                    <i class="fab fa-cc-paypal payment-link"><input type="radio" id="paypal" name="payment" value="paypal"></i>
+                    <label><strong>Köpalternativ</strong></label>
                     <select>
                         <option >Engångsköp</option>
                         <option >Varje vecka</option>
                         <option >Varannan vecka</option>
-                      </select>
+                    </select>
+
+
+
                 </ul>
             </div>
-            <div class="checkout-divider">
-                <div class="checkout-summary">
+            <div class="checkout-divider ">
+                <div class="checkout-summary ">
                     <h2>Fryskassen</h2>
-                    <img class="checkout-image" src="../images/kasse1.png" alt="bild på vald kasse">
+                    <img class="checkout-image " src="../images/kasse1.png " alt="bild på vald kasse ">
                     <p>Du har valt Fryskassen</p>
                     <p>Pris: 250:-</p>
                     <p>Leveransavgift: 100:-</p>
                     <p>Totalsumma: 350:-</p>
-                    <button class="btn btn-success">Slutför köp</button>
-                    <button class="btn btn-danger" onClick="window.location.href='index.html'">Avbryt</button>
+                    <button class="btn btn-success " onClick="window.location.href='index.html' ">Slutför köp</button>
+                    <button class="btn btn-secondary " onClick="window.location.href='index.html' ">Avbryt</button>
                 </div>
             </div>
         </div>
     </main>
 
     <footer>
-        <div class="footer-wrapper">
-            <ul class="social-links">
+        <div class="footer-wrapper ">
+            <ul class="social-links ">
                 <li>
-                    <a href="#"><i class="fab fa-twitter"></i>
+                    <a href="# "><i class="fab fa-twitter "></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#"><i class="fab fa-facebook"></i>
+                    <a href="# "><i class="fab fa-facebook "></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#"><i class="fab fa-instagram"></i>
+                    <a href="# "><i class="fab fa-instagram "></i>
                     </a>
                 </li>
             </ul>
             <p>Copyright © - 2020 - Matkassen - All rights reserved</p>
-            <ul class="footer-info">
-                <li><a href="about.html">Om oss</a></li>
-                <li><a href="#">Kontakt</a></li>
+            <ul class="footer-info ">
+                <li><a href="about.html ">Om oss</a></li>
+                <li><a href="# ">Kontakt</a></li>
             </ul>
 
         </div>

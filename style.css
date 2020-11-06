@@ -29,7 +29,6 @@ header {
     height: 100%;
     margin: 0 auto 0;
     display: flex;
-    justify-content: space-around;
 }
 
 .logo-container {
@@ -39,6 +38,7 @@ header {
 }
 
 nav {
+    margin-left: 12em;
     width: 50%;
 }
 
@@ -241,7 +241,7 @@ h5 {
 
 .checkout-wrapper {
     width: 80%;
-    height: 80%;
+    height: 90%;
     display: flex;
     margin: auto;
     justify-content: center;
@@ -301,6 +301,18 @@ h5 {
     height: 200px;
     width: 200px;
     align-self: center;
+}
+
+.payment-method {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.payment-link {
+    color: white;
+    font-size: 3em;
+    margin-right: 0.5em;
 }
 
 
